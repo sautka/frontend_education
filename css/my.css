@@ -1,0 +1,97 @@
+@import url("style2.css");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+body
+{
+  color: rgb(0, 0, 0);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  flex: 0 0 5em;
+  border-radius: 30px;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  flex: 1 1 auto;
+}
+footer{
+flex: 0 0 5em;
+/*background: linear-gradient (#bdc3c7,#2c3e50)*/
+
+}
+nav {
+flex: 1;
+padding: 1em;
+border-radius: 30px;
+}
+article {
+
+  background: linear-gradient(to bottom,#f1f1f1, #646666 );
+  flex: 2 2 50em;
+  padding: 1em;
+  border-radius: 30px;
+  text-align: center;
+}
+/*.center-div
+{
+  margin: 0 auto;
+  background-color: #ccc;
+  border-radius: 60px;
+  text-align: center;
+  padding: 30px;
+  width: 1000px;
+}
+.center
+{
+  text-align: center;
+}*/
+h1 {
+    font-size: 200%;
+}
+p{
+    /*padding-left: 20px;*/
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+}
+ol {
+    counter-reset: section; /* Creates a new instance of the
+                               section counter with each ol
+                               element */
+    list-style-type: none;
+  }
+  
+  li::before {
+    counter-increment: section; /* Increments only this instance
+                                              of the section counter */
+    content: counters(section, ".") " "; /* Combines the values of all instances
+                                            of the section counter, separated
+                                            by a period */
+  }
+ table {
+    border-collapse: collapse;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even)
+  {
+    background-color: #f2f2f2;
+  }
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
